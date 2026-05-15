@@ -1,28 +1,73 @@
-# Temperature Converter
+<div align="center">
 
-A responsive web-based temperature converter that lets users convert values between multiple temperature units. The app supports Celsius, Fahrenheit, Kelvin, Rankine, Réaumur, Delisle, Newton, and Rømer.
+# 🌡️ Temperature Converter
 
-## Features
+### Convert temperatures between multiple units with a clean, responsive, and colorful web interface.
 
-- Convert between 8 temperature units:
-  - Celsius
-  - Fahrenheit
-  - Kelvin
-  - Rankine
-  - Réaumur
-  - Delisle
-  - Newton
-  - Rømer
-- Swap source and target units with one click
-- Displays the conversion formula
-- Shows freezing and boiling points of water in the selected target unit
-- Responsive layout for desktop and mobile screens
-- Clean and colorful user interface
+![HTML](https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript&logoColor=black)
+![Responsive](https://img.shields.io/badge/Responsive-Design-green?style=for-the-badge)
 
-## Project Structure
+</div>
+
+---
+
+## 📌 About the Project
+
+**Temperature Converter** is a simple and responsive web application that allows users to convert temperatures between different temperature units.
+
+The project is built using **HTML**, **CSS**, and **JavaScript**. It is beginner-friendly and useful for learning DOM manipulation, form handling, and unit conversion logic.
+
+---
+
+## ✨ Features
+
+- 🌡️ Convert temperature between multiple units
+- 🔁 Swap source and target units easily
+- 🧮 Displays conversion formula
+- ❄️ Shows freezing point of water
+- 🔥 Shows boiling point of water
+- 📱 Fully responsive design
+- 🎨 Colorful and clean user interface
+- ⚡ Fast and lightweight
+
+---
+
+## 🌍 Supported Temperature Units
+
+| Unit | Symbol |
+|---|---|
+| Celsius | °C |
+| Fahrenheit | °F |
+| Kelvin | K |
+| Rankine | °R |
+| Réaumur | °Ré |
+| Delisle | °De |
+| Newton | °N |
+| Rømer | °Rø |
+
+---
+
+## 🛠️ Technologies Used
+
+<div align="center">
+
+| Technology | Purpose |
+|---|---|
+| 🧱 HTML5 | Page structure |
+| 🎨 CSS3 | Styling and responsive design |
+| ⚙️ JavaScript | Conversion logic and interactivity |
+
+</div>
+
+---
+
+## 📂 Project Structure
 
 ```text
 temperature-converter/
+│
 ├── index.html
 ├── style.css
 ├── script.js
