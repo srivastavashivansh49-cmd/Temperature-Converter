@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temperature Converter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero-card">
+      <div class="badge">🌡️ Smart Temperature Tool</div>
+      <h1>Temperature Converter</h1>
+      <p class="subtitle">Convert between Celsius, Fahrenheit, Kelvin, Rankine, Réaumur, Delisle, Newton, and Rømer.</p>
+
+      <form id="converterForm" class="converter" autocomplete="off">
+        <div class="field full">
+          <label for="temperature">Temperature value</label>
+          <input type="number" id="temperature" placeholder="Example: 37" step="any" required />
+        </div>
+
+        <div class="field">
+          <label for="fromUnit">From</label>
+          <select id="fromUnit"></select>
+        </div>
+
+        <button class="swap-btn" type="button" id="swapBtn" aria-label="Swap units">⇄</button>
+
+        <div class="field">
+          <label for="toUnit">To</label>
+          <select id="toUnit"></select>
+        </div>
+
+        <button class="convert-btn full" type="submit">Convert Temperature</button>
+      </form>
+
+      <section class="result-card" id="resultCard">
+        <span class="result-label">Result</span>
+        <strong id="result">Enter a value to convert</strong>
+        <small id="formula">Formula will appear here</small>
+      </section>
+
+      <section class="extras">
+        <div>
+          <span>Freezing point of water</span>
+          <strong id="freezingPoint">0 °C</strong>
+        </div>
+        <div>
+          <span>Boiling point of water</span>
+          <strong id="boilingPoint">100 °C</strong>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

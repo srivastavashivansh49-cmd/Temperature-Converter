@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(120deg, #fff7d6, #ffd6e8, #d8f3ff);
+  color: #263238;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.hero-card {
+  width: 100%;
+  max-width: 720px;
+  background: #ffffff;
+  border: 3px solid #263238;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 10px 10px 0 #263238;
+}
+
+.badge {
+  display: inline-block;
+  background: #ffca3a;
+  color: #263238;
+  border: 2px solid #263238;
+  border-radius: 20px;
+  padding: 7px 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  color: #22223b;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #4a4e69;
+}
+
+.converter {
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr;
+  gap: 15px;
+  align-items: end;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid #263238;
+  outline: none;
+}
+
+input,
+select {
+  padding: 12px;
+  background: #f8f9fa;
+}
+
+input:focus,
+select:focus {
+  background: #fff;
+  box-shadow: 0 0 0 3px #bde0fe;
+}
+
+.swap-btn {
+  height: 48px;
+  background: #8ecae6;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.convert-btn {
+  margin-top: 8px;
+  padding: 13px;
+  background: #fb8500;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.swap-btn:hover,
+.convert-btn:hover {
+  transform: translateY(-2px);
+}
+
+.result-card {
+  margin-top: 22px;
+  padding: 18px;
+  background: #e9f5db;
+  border: 2px solid #263238;
+  border-radius: 14px;
+}
+
+.result-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #386641;
+}
+
+#result {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#formula {
+  display: block;
+  margin-top: 8px;
+  color: #555;
+}
+
+.extras {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.extras div {
+  padding: 14px;
+  background: #fefae0;
+  border: 2px dashed #263238;
+  border-radius: 12px;
+}
+
+.extras span {
+  display: block;
+  margin-bottom: 5px;
+  color: #606c38;
+}
+
+.extras strong {
+  font-size: 18px;
+}
+
+@media (max-width: 650px) {
+  .hero-card {
+    padding: 20px;
+    box-shadow: 6px 6px 0 #263238;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .converter,
+  .extras {
+    grid-template-columns: 1fr;
+  }
+
+  .swap-btn {
+    width: 100%;
+  }
+}
